@@ -6,7 +6,8 @@ int main()
 
     // Removed redundant initial prompt
 
-    int max, row_max = 0, column_max = 0;
+    int max, row_max, column_max;
+    int min, row_min, column_min;
 
     for (row = 0; row < 5; row++)
     {
@@ -18,6 +19,9 @@ int main()
                 max = matrix[0][0];
                 row_max = 0;
                 column_max = 0;
+                min = matrix[0][0];
+                row_min = 0;
+                column_min = 0;
             }
             int currentElement = matrix[row][column];
             if (currentElement > max) {
@@ -25,9 +29,16 @@ int main()
                 row_max = row;
                 column_max = column;
             }
+            if (currentElement < min) 
+            {
+                min = currentElement; 
+                row_min = row;
+                column_min = column;
+            }
         }
     }
 
-    printf("Maximum element: %d at position [%d][%d]\n", max, row_max + 1, column_max + 1);
+    printf("%d %d %d\n", max, row_max, column_max);
+    printf("%d %d %d\n", min, row_min, column_min);
     return 0;
 }

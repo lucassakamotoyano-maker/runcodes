@@ -6,14 +6,14 @@
 int main() {
   
     int age = 25;
-    float gpa = 2.5;
+    float gpa = 2.567;
     double pi = 3.14159265359;
     char grade = 'A';
     char name[] = "Bro Code";
     bool is_Online = true;
 
     printf("You are %d years old\n", age);
-    printf("Your gpa is %.2f\n", gpa);
+    printf("Your gpa is %.2f\n", gpa); //gpa will be rounded up
     printf("The number of pi is approximately %.11lf\n", pi);
     printf("Your grade is %c\n", grade);
     printf("Hello %s\n", name);
