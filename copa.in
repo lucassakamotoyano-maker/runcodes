@@ -1,0 +1,11 @@
+10
+load grupoA.txt
+consulta Brasil pontos
+consulta Japao pontos
+load naoexiste.txt
+load atualizacao.txt
+consulta Brasil pontos
+consulta Argentina saldo
+consulta Brasil vitorias
+consulta Brasil saldo
+consulta Franca pontos
