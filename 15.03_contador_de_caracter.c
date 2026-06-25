@@ -15,12 +15,13 @@ int main(void)
     nome_arquivo[strcspn(nome_arquivo, "\r\n")] = '\0';
 
     FILE *arquivo = fopen(nome_arquivo, "rb");
+
     if (arquivo == NULL)
     {
         return 1;
     }
 
-    while (fgetc(arquivo) != EOF)
+    while (fgetc(arquivo) != EOF)//fgetc lê um caractere do arquivo e retorna EOF quando chega ao final
     {
         quantidade++;
     }

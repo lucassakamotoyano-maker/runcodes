@@ -14,6 +14,7 @@ int main(void)
     nome_arquivo[strcspn(nome_arquivo, "\r\n")] = '\0';
 
     FILE *arquivo = fopen(nome_arquivo, "r");
+    
     if (arquivo == NULL)
     {
         return 1;

@@ -31,7 +31,7 @@ int main(void)
 
     while ((caractere = fgetc(entrada)) != EOF)
     {
-        if (inicio_linha)
+        if (inicio_linha)//se inicio_linha = 1, vai rodar (1 = verdadeiro)
         {
             fprintf(saida, "%03llu: ", numero_linha);
             inicio_linha = 0;

@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "avaliador.h"
+
 static char *ler_linha(FILE *arquivo)
 {
     size_t capacidade = 128;
